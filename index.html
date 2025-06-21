@@ -101,6 +101,7 @@
         // initialize and start timer
         timerElem.textContent = '00:00';
         startTime = Date.now();
+        updateTimer();             // immediate update
         timerInterval = setInterval(updateTimer, 500);
       }).catch(err => console.error('Microphone access denied:', err));
     });
